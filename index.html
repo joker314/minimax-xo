@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Minimax</title>
+		<style>
+            body {
+                color: grey;   
+            }
+
+            td {
+                width: 50px;
+                height: 50px;
+                background-color: lightgrey;
+                text-align: center;
+                vertical-align: center;
+                color: white;
+                font-family: monospace;
+                font-size: 30px;
+                transition: 1s;
+            }
+            
+            td.legal:hover {
+                background-color: magenta;
+            }
+            
+            div , span {
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            
+            .good {
+                color: limegreen;
+            }
+            
+            .bad {
+                color: orangered;
+            }
+            
+            .maybe {
+                color: orange;
+            }
+            
+            .exciting {
+                color: blue;
+            }
+		</style>
+	</head>
+	<body>
+        <div>Worst-case: <span class="prediction"></span></div>
+        <div>Winner: <span class="result"></span></div>
+        <script src="./board.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
